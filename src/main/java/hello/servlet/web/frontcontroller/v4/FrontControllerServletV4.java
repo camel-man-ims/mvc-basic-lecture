@@ -27,6 +27,11 @@ public class FrontControllerServletV4 extends HttpServlet {
     }
 
     @Override
+    protected long getLastModified(HttpServletRequest req) {
+        return super.getLastModified(req);
+    }
+
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String requestURI = request.getRequestURI();
