@@ -1,6 +1,9 @@
 package hello.servlet.web.springmvc.old;
 
+import org.springframework.boot.autoconfigure.data.ConditionalOnRepositoryType;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.web.HttpRequestHandler;
 
 import javax.servlet.ServletException;
